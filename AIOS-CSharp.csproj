@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AIOS</RootNamespace>
+    <AssemblyName>AIOS</AssemblyName>
+    <PackageId>AIOS.CSharp</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>AIOS Team</Authors>
+    <Description>AI Agent Operating System - C# Implementation</Description>
+    <PackageTags>ai;agent;operating-system;llm;kernel;scheduler</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-rc4" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.0.0-rc4" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.0.0-rc4" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.HuggingFace" Version="1.0.0-rc4" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.Core" Version="1.0.0-rc4" />
+    <PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.0.0-rc4" />
+    <PackageReference Include="ConcurrentCollections" Version="1.3.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+    <PackageReference Include="System.Threading.Channels" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
